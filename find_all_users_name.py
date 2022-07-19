@@ -14,9 +14,9 @@ def find_all_users_name(data: dict)->list:
     for i in messages:
         x = i.get("actor",False)
         y = i.get("from",False)
-        if x != False:
+        if x and x not in users:
             users.append(x)
-        if y != False:
+        if y and y not in users:
             users.append(y)    
     return users
 
