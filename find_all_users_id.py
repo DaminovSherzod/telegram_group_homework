@@ -20,9 +20,11 @@ def find_all_users_id(data: dict)->list:
             id.add(x)
         if y != False:
             id.add(y)
-            # id.append(y) 
-    id1.append(id)        
-    return type(id1)
+            # id.append(y)
+    id1.append(id) 
+    # for n in id:
+    #     id1.append(n)        
+    return id1
 
 data = read_data('data/result.json')
 print(find_all_users_id(data))
