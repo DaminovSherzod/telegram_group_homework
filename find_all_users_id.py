@@ -16,8 +16,10 @@ def find_all_users_id(data: dict)->list:
         y = i.get("from_id",False)
         if x and x not in id:
             id.append(x)
-        if y and y not in id:
-            id.append(y)        
+        # if y and y not in id:
+        #     id.append(y) 
+    # id.remove('channel1640165484')
+    # id.remove('channel1474589327')       
     return id
 
 data = read_data('data/result.json')
